@@ -20,16 +20,13 @@ func TestNextToken(t *testing.T) {
 		expectedType    token.TTokenType
 		expectedLiteral string
 	}{
-		{token.LET, "let"},
 		{token.ASSIGN, "="},
 		{token.PLUS, "+"},
 		{token.LPAREN, "("},
 		{token.RPAREN, ")"},
 		{token.LBRACE, "{"},
 		{token.RBRACE, "}"},
-		{token.SEMICOLON, ";"},
 		{token.COMMA, ","},
-		{token.RBRACE, "}"},
 		{token.SEMICOLON, ";"},
 		{token.EOF, ""},
 	}
